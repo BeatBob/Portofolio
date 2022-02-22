@@ -8,7 +8,7 @@ function Hero() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const squareVariants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
     hidden: { opacity: 0, scale: 0 },
   };
 

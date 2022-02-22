@@ -1,9 +1,30 @@
 import styles from "../styles/About.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function About() {
+  const squareVariants = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
+    hidden: { opacity: 0, scale: 0 },
+  };
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <section className="max-w-5xl min-h-screen mx-auto mt-32 ">
+    <motion.section
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={squareVariants}
+      className="max-w-5xl min-h-screen mx-auto mt-32"
+    >
       <div className="font-bold w-full flex h-10">
         <h2 className="min-w-[200px]">
           <span className="text-xl">01. </span>
@@ -15,19 +36,19 @@ function About() {
       <div className="grid grid-cols-2">
         <div className="relative">
           <div className="">
-            <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa]">
+            <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
               Hello! My name is M.Robi, a self-taught Front-end Developer and I
               enjoy creating things that live on the internet. My interest in
               web development started back in November 2020 when I decided to
               learn about Digital Marketing — turns out i got an interest in web
               development.
             </p>
-            <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa]">
+            <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
               I learned a lot from the sources available on the internet such as
               FreeCodeCamp, Youtube, Stack Overflow, etc - and it taught me a
               lot about HTML, CSS, javascript and it Frameworks!
             </p>
-            <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa]">
+            <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
               Fast-forward to today, I want to take a bigger step and start a
               new career in Web Development.
             </p>
@@ -45,7 +66,7 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

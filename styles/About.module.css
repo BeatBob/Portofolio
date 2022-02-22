@@ -19,10 +19,6 @@
   transition: all 0.2s;
 }
 
-.picture:hover {
-  width: 19rem;
-  height: 19rem;
-}
 .picture:hover::before {
   top: 10px;
   left: 10px;

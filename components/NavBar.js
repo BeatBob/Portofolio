@@ -26,10 +26,10 @@ export default function Navbar() {
             <span className="dark:text-[#64ffda]">01.</span> About
           </a>
           <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
-            <span className="dark:text-[#64ffda]">02.</span> Projects
+            <span className="dark:text-[#64ffda]">02.</span> Experience
           </a>
           <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
-            <span className="dark:text-[#64ffda]">03.</span> Experience
+            <span className="dark:text-[#64ffda]">03.</span> Projects
           </a>
           <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
             <span className="dark:text-[#64ffda]">04.</span> Contact

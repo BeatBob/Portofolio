@@ -19,19 +19,21 @@ function About() {
 
   return (
     <motion.section
+      aria-label="About Me"
       ref={ref}
       animate={controls}
       initial="hidden"
       variants={squareVariants}
-      className="max-w-5xl min-h-screen mx-auto mt-32"
+      className="max-w-5xl min-h-screen mx-auto pt-32"
+      id="About"
     >
-      <div className="font-bold w-full flex h-10">
+      <header className="font-bold w-full flex h-10">
         <h2 className="min-w-[200px]">
           <span className="text-xl">01. </span>
           <span className="font-sans text-3xl dark:text-white">About Me</span>
         </h2>
         <span className="block h-[2px] bg-[#4831d4] w-80 self-center "></span>
-      </div>
+      </header>
 
       <div className="grid grid-cols-2">
         <div className="relative">

@@ -3,10 +3,13 @@ import Navbar from "../components/NavBar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
+import RightStuff from "../components/RightStuff";
+import LeftStuff from "../components/LeftStuff";
+import Work from "../components/Work";
 
 export default function Home() {
   return (
-    <div className="dark:bg-[#0a192f]">
+    <div className="dark:bg-[#0a192f] bg-[#eeeee6]">
       <Head>
         <title>MRobi</title>
         <meta name="description" content="Portofolio Website by MRobi" />
@@ -15,10 +18,12 @@ export default function Home() {
 
       <main>
         <Navbar />
+        <LeftStuff />
+        <RightStuff />
         <Hero />
         <About />
         <Experience />
-        <Hero />
+        <Work />
       </main>
 
       <footer></footer>

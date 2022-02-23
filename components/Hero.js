@@ -26,13 +26,14 @@ function Hero() {
 
   return (
     <motion.section
+      aria-label="my hero page"
       ref={ref}
       animate={controls}
       initial="hidden"
       variants={squareVariants}
-      className="square relative max-w-5xl min-h-screen m-auto"
+      className="square relative max-w-6xl min-h-screen m-auto overflow-hidden"
     >
-      <div className="pt-32 -ml-10">
+      <header className="pt-32 ">
         <p className="font-semibold text-xl dark:text-[#64ffda] opacity-80">
           Hi<span className="font-sans">,</span>
         </p>
@@ -48,14 +49,14 @@ function Hero() {
         <p className="font-sans font-bold text-2xl dark:text-[#8892b0] mt-10">
           I build things for the web.
         </p>
-      </div>
+      </header>
 
       <div className={styles.ocean}>
         <div className={styles.wave}></div>
         <div className={styles.wave}></div>
       </div>
 
-      <div className="absolute right-80 top-20 flex items-center">
+      <div className="absolute right-60 left-auto top-20 flex items-center">
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -68,7 +69,7 @@ function Hero() {
               viewBox="0 0 24 24"
               fill="currentColor"
               stroke="currentColor"
-              className="w-96 h-w-96 text-yellow-500 dark:text-yellow-500 opacity-60"
+              className="w-64 h-w-64 text-yellow-500 dark:text-yellow-500 opacity-60"
             >
               {theme === "dark" ? (
                 <path

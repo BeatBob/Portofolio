@@ -22,14 +22,23 @@ export default function Navbar() {
         </div>
 
         <nav className="space-x-4 hidden md:block ">
-          <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
+          <a
+            href="#About"
+            className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+          >
             <span className="dark:text-[#64ffda]">01.</span> About
           </a>
-          <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
+          <a
+            href="#Skills"
+            className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+          >
             <span className="dark:text-[#64ffda]">02.</span> Experience
           </a>
-          <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
-            <span className="dark:text-[#64ffda]">03.</span> Projects
+          <a
+            href="#Work"
+            className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+          >
+            <span className="dark:text-[#64ffda]">03.</span> Work
           </a>
           <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
             <span className="dark:text-[#64ffda]">04.</span> Contact

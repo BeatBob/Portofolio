@@ -1,0 +1,36 @@
+.RNav {
+  position: fixed;
+  right: 20px;
+  left: auto;
+  bottom: 0;
+  writing-mode: vertical-lr;
+  display: flex;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.LNav {
+  position: fixed;
+  right: auto;
+  left: 20px;
+  bottom: 0;
+  writing-mode: vertical-lr;
+  display: flex;
+  width: 3rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.link {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.RNav:hover .link {
+  padding-bottom: 10px;
+}

@@ -30,19 +30,21 @@ function Experience() {
 
   return (
     <motion.section
+      aria-label="Experience & Skills"
       ref={ref}
       animate={controls}
       initial="hidden"
       variants={squareVariants}
-      className="max-w-2xl min-h-screen mx-auto  "
+      className="max-w-2xl min-h-screen mx-auto pt-32"
+      id="Skills"
     >
-      <div className="font-bold w-full flex h-10">
+      <header className="font-bold w-full flex h-10">
         <h2 className="min-w-[200px]">
           <span className="text-xl">01. </span>
           <span className="font-sans text-3xl dark:text-white">Skills</span>
         </h2>
         <span className="block h-[2px] bg-[#4831d4] w-80 self-center "></span>
-      </div>
+      </header>
 
       <div className="mt-6">
         <p className="font-bold text-lg opacity-80 dark:text-white font-sans">

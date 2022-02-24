@@ -40,7 +40,7 @@ function Experience() {
     >
       <header className="font-bold w-full flex h-10">
         <h2 className="min-w-[200px]">
-          <span className="text-xl">01. </span>
+          <span className="text-xl text-black dark:text-[#4831d4]">02. </span>
           <span className="font-sans text-3xl dark:text-white">Skills</span>
         </h2>
         <span className="block h-[2px] bg-[#4831d4] w-80 self-center "></span>

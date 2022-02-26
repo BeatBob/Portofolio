@@ -6,7 +6,7 @@ import Experience from "../components/Experience";
 import RightStuff from "../components/RightStuff";
 import LeftStuff from "../components/LeftStuff";
 import Work from "../components/Work";
-import Mapp from "../components/Mapp";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
         <About />
         <Experience />
         <Work />
-        <Mapp />
+        <Contact />
       </main>
 
       <footer></footer>

@@ -40,9 +40,13 @@ export default function Navbar() {
           >
             <span className="dark:text-[#64ffda]">03.</span> Work
           </a>
-          <a className="text-gray-600 dark:text-gray-300 text-sm font-bold">
+          <a
+            href="#Contact"
+            className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+          >
             <span className="dark:text-[#64ffda]">04.</span> Contact
           </a>
+
           <Button
             variant="outlined"
             className="text-black font-sans dark:text-white"

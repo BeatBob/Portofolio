@@ -32,23 +32,35 @@ function Hero() {
       initial="hidden"
       variants={squareVariants}
       className="square relative max-w-6xl min-h-screen m-auto overflow-hidden"
+      id="Home"
     >
       <header className="pt-32 ">
         <p className="font-semibold text-xl dark:text-[#64ffda] opacity-80">
-          Hi<span className="font-sans">,</span>
+          Hi<span className="font-sans dark:text-white">,</span>
         </p>
         <h1 className="font-sans font-bold text-7xl ">
-          <span className="dark:text-[#ccd6f6] leading-[88px]">
-            I&apos;m Robi ,
-          </span>
+          <span className="dark:text-[#ccd6f6] ">I&apos;m Robi ,</span>
           <br />
-          <span className="dark:text-[#8892b0] leading-[72px]">
-            Front-end Developer.
-          </span>
+          <span className="dark:text-[#8892b0] ">Front-end Developer.</span>
         </h1>
-        <p className="font-sans font-bold text-2xl dark:text-[#8892b0] mt-10">
+
+        <p className="font-sans font-bold text-2xl dark:text-[#8892b0] my-5">
           I build things for the web.
         </p>
+
+        <button
+          className="inline-block h-fit rounded-sm  border-2 border-cyan-500  
+          dark:text-white hover:text-white hover:bg-[#4831d4] hover:dark:bg-[#fffb] hover:dark:text-[#0a192f] duration-200"
+        >
+          <a
+            href="mailto:mrobichaniago@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans font-bold tracking-wider text-base px-8 py-4 inline-block"
+          >
+            Send Message!
+          </a>
+        </button>
       </header>
 
       <div className={styles.ocean}>

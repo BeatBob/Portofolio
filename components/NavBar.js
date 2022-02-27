@@ -1,24 +1,24 @@
-import Link from "next/link";
+import { useTheme } from "next-themes";
 import styles from "../styles/NavBar.module.css";
 import { Button } from "@mui/material";
+import Image from "next/image";
 
 export default function Navbar() {
+  const { theme } = useTheme();
+
   return (
     <div className={styles.nav}>
       <div className="flex md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
 
-        <div className="flex flex-col">
-          <Link href="/">
-            <a>
-              <h1 className="font-semibold text-xl dark:text-pink-600 font-sans">
-                M.Robi
-              </h1>
-              <p className="text-base font-light text-gray-500 dark:text-blue-400 font-sans">
-                Front-end Developer
-              </p>
-            </a>
-          </Link>
+        <div className="p-1 flex justify-center items-center">
+          <a href="#Home">
+            {theme === "dark" ? (
+              <Image src="/Logo_black.png" alt="LOGO" width={60} height={60} />
+            ) : (
+              <Image src="/Logo_white.png" alt="LOGO" width={60} height={60} />
+            )}
+          </a>
         </div>
 
         <nav className="space-x-4 hidden md:block ">

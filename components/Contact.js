@@ -49,7 +49,7 @@ function Contact() {
 
           <button
             className="rounded-sm px-4 py-2 border-2 border-cyan-500  
-          dark:text-white hover:text-white hover:bg-slate-900 hover:dark:bg-[#fffb] hover:dark:text-[#0a192f] duration-200"
+          dark:text-white hover:text-white hover:bg-[#4831d4] hover:dark:bg-[#fffb] hover:dark:text-[#0a192f] duration-200"
           >
             <a
               href="mailto:mrobichaniago@gmail.com"

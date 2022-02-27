@@ -6,7 +6,11 @@ function RightStuff() {
       <p
         className={`${styles.link} hover:text-black dark:text-white hover:dark:text-[#64ffda]`}
       >
-        <a href="mailto:mrobichaniago@gmail.com" target="blank">
+        <a
+          href="mailto:mrobichaniago@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           mrobichaniago@gmail.com
         </a>
       </p>

@@ -31,20 +31,22 @@ function Hero() {
       animate={controls}
       initial="hidden"
       variants={squareVariants}
-      className="square relative max-w-6xl min-h-screen m-auto overflow-hidden"
+      className="relative md:max-w-xl lg:max-w-4xl xl:max-w-6xl min-h-screen m-auto overflow-hidden"
       id="Home"
     >
-      <header className="pt-32 ">
+      <header className="pt-32 w-5/6 m-auto md:m-0 md:w-full ">
         <p className="font-semibold text-xl dark:text-[#64ffda] opacity-80">
           Hi<span className="font-sans dark:text-white">,</span>
         </p>
-        <h1 className="font-sans font-bold text-7xl ">
-          <span className="dark:text-[#ccd6f6] ">I&apos;m Robi ,</span>
+        <h1 className="font-sans font-bold text-xl lg:text-6xl xl:text-7xl md:text-3xl ">
+          <span className="dark:text-[#ccd6f6] text-3xl lg:text-6xl xl:text-7xl ">
+            I&apos;m Robi ,
+          </span>
           <br />
           <span className="dark:text-[#8892b0] ">Front-end Developer.</span>
         </h1>
 
-        <p className="font-sans font-bold text-2xl dark:text-[#8892b0] my-5">
+        <p className="font-sans font-bold text-xl dark:text-[#8892b0] my-5">
           I build things for the web.
         </p>
 
@@ -68,7 +70,7 @@ function Hero() {
         <div className={styles.wave}></div>
       </div>
 
-      <div className="absolute right-60 left-auto top-20 flex items-center">
+      <div className="absolute top-0 sm:right-48 sm:top-28 md:right-48 md:top-20 lg:right-60 left-auto flex items-center">
         <button
           aria-label="Toggle Dark Mode"
           type="button"
@@ -81,7 +83,7 @@ function Hero() {
               viewBox="0 0 24 24"
               fill="currentColor"
               stroke="currentColor"
-              className="w-64 h-w-64 text-yellow-500 dark:text-yellow-500 opacity-60"
+              className="w-12 h-12 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-64 lg:h-64 text-yellow-500 dark:text-yellow-500 opacity-60"
             >
               {theme === "dark" ? (
                 <path

@@ -17,12 +17,8 @@ function Contact() {
   }, [controls, inView]);
 
   return (
-    <motion.section
+    <section
       aria-label="Experience & Skills"
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={squareVariants}
       className="max-w-5xl min-h-screen mx-auto pt-20 "
       id="Contact"
     >
@@ -37,7 +33,13 @@ function Contact() {
       </header>
 
       <div className="h-5/6 grid grid-cols-2">
-        <div className="px-12">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={squareVariants}
+          className="px-12"
+        >
           <h4 className="text-3xl dark:text-white opacity-90 font-bold mb-8">
             Get In Touch!
           </h4>
@@ -60,11 +62,11 @@ function Contact() {
               Send Message!
             </a>
           </button>
-        </div>
+        </motion.div>
 
         <Mapp />
       </div>
-    </motion.section>
+    </section>
   );
 }
 

@@ -21,13 +21,9 @@ function Work() {
   }, [controls, inView]);
 
   return (
-    <motion.section
+    <section
       aria-label="Work"
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={squareVariants}
-      className="max-w-5xl min-h-screen mx-auto pt-32"
+      className="max-w-5xl min-h-screen mx-auto pt-24"
       id="Work"
     >
       <header className="font-bold w-full flex h-10 mb-10">
@@ -244,7 +240,7 @@ function Work() {
           </div>
         </li>
       </ul>
-    </motion.section>
+    </section>
   );
 }
 

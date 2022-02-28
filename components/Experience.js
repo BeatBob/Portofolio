@@ -31,10 +31,6 @@ function Experience() {
   return (
     <motion.section
       aria-label="Experience & Skills"
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={squareVariants}
       className="max-w-2xl min-h-screen mx-auto pt-32"
       id="Skills"
     >
@@ -45,43 +41,49 @@ function Experience() {
         </h2>
         <span className="block h-[2px] bg-[#4831d4] w-80 self-center "></span>
       </header>
-
-      <div className="mt-6">
-        <p className="font-bold text-lg opacity-80 dark:text-white font-sans">
-          I&apos;ve create some responsive websites that are fast, easy to use,
-          own projects and built with best practices. The main area of my
-          expertise is front-end development, HTML, CSS, JS, building small and
-          medium web apps. <br /> Visit my LinkedIn profile for more details or
-          just contact me.
-        </p>
-        <p className="mt-10 font-semibold text-lg opacity-80 dark:text-white font-sans">
-          Here are a few technologies I&apos;ve been working with recently:
-        </p>
-        <div className="flex justify-between w-8/12 mt-2">
-          <ul>
-            {technologies.map((tag) => (
-              <li
-                className="dark:text-white font-semibold opacity-80 font-sans"
-                key={tag.indexOf()}
-              >
-                <ArrowRightIcon />
-                {tag}
-              </li>
-            ))}
-          </ul>
-          <ul>
-            {Tools.map((tag) => (
-              <li
-                className="dark:text-white font-semibold opacity-80 font-sans"
-                key={tag.indexOf()}
-              >
-                <ArrowRightIcon />
-                {tag}
-              </li>
-            ))}
-          </ul>
+      <motion.div
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        variants={squareVariants}
+      >
+        <div className="mt-6">
+          <p className="font-bold text-lg opacity-80 dark:text-white font-sans">
+            I&apos;ve create some responsive websites that are fast, easy to
+            use, own projects and built with best practices. The main area of my
+            expertise is front-end development, HTML, CSS, JS, building small
+            and medium web apps. <br /> Visit my LinkedIn profile for more
+            details or just contact me.
+          </p>
+          <p className="mt-10 font-semibold text-lg opacity-80 dark:text-white font-sans">
+            Here are a few technologies I&apos;ve been working with recently:
+          </p>
+          <div className="flex justify-between w-8/12 mt-2">
+            <ul>
+              {technologies.map((tag) => (
+                <li
+                  className="dark:text-white font-semibold opacity-80 font-sans"
+                  key={Math.random()}
+                >
+                  <ArrowRightIcon />
+                  {tag}
+                </li>
+              ))}
+            </ul>
+            <ul>
+              {Tools.map((tag) => (
+                <li
+                  className="dark:text-white font-semibold opacity-80 font-sans"
+                  key={Math.random()}
+                >
+                  <ArrowRightIcon />
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </motion.section>
   );
 }

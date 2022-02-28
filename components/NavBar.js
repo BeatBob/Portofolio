@@ -1,9 +1,13 @@
-import { useTheme } from "next-themes";
-import styles from "../styles/NavBar.module.css";
-import { Button } from "@mui/material";
-import Image from "next/image";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { useState } from "react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import { Button } from "@mui/material";
+import styles from "../styles/NavBar.module.css";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import CodeIcon from "@mui/icons-material/Code";
 
 export default function Navbar() {
   const { theme } = useTheme();
@@ -19,7 +23,7 @@ export default function Navbar() {
     <div className="">
       {/* burger nav */}
       <div
-        className={`${dash} fixed top-0 right-0 flex h-screen md:hidden z-20 drop-shadow-xl`}
+        className={`${dash} fixed top-0 right-0 flex h-screen md:hidden z-20 drop-shadow-xl `}
       >
         <div
           onClick={menuOpen}
@@ -27,8 +31,109 @@ export default function Navbar() {
         >
           <MenuOpenIcon className="scale-150" />
         </div>
-        <div className="w-64 -mt-4 right-0 bg-rose-100 flex flex-col justify-around"></div>
+
+        <div className=" relative w-64 -mt-4 right-0 bg-[#eeeee6] dark:bg-[#0a192f] flex flex-col justify-around dark:border-l-2 dark:border-white">
+          {/* logo  */}
+          <div className="absolute top-10 w-full p-4 flex justify-center items-center hover:scale-110 transition-all">
+            <a href="#Home">
+              {theme === "dark" ? (
+                <Image
+                  src="/Logo_black.png"
+                  alt="LOGO"
+                  width={60}
+                  height={60}
+                />
+              ) : (
+                <Image
+                  src="/Logo_white.png"
+                  alt="LOGO"
+                  width={60}
+                  height={60}
+                />
+              )}
+            </a>
+          </div>
+
+          {/* menu nav  */}
+          <div>
+            <nav className="flex flex-col gap-4 justify-center items-center mt-36">
+              <a
+                href="#About"
+                className="text-gray-600 dark:text-white text-lg font-bold font-sans block w-full text-center py-2 hover:dark:bg-slate-700 hover:bg-white border-b-2 border-white"
+              >
+                About
+              </a>
+              <a
+                href="#Skills"
+                className="text-gray-600 dark:text-white text-lg font-bold font-sans block w-full text-center py-2 hover:dark:bg-slate-700 hover:bg-white border-b-2 border-white"
+              >
+                Experience
+              </a>
+              <a
+                href="#Work"
+                className="text-gray-600 dark:text-white text-lg font-bold font-sans block w-full text-center py-2 hover:dark:bg-slate-700 hover:bg-white border-b-2 border-white"
+              >
+                Work
+              </a>
+              <a
+                href="#Contact"
+                className="text-gray-600 dark:text-white text-lg font-bold font-sans block w-full text-center py-2 hover:dark:bg-slate-700 hover:bg-white border-b-2 border-white"
+              >
+                Contact
+              </a>
+            </nav>
+
+            <div className="w-full flex justify-between mt-10 mb-10">
+              <a
+                href="https://github.com/BeatBob/"
+                target="blank"
+                className="p-2 transition-all brightness-200 hover:contrast-200 hover:scale-150"
+              >
+                <GitHubIcon />
+              </a>{" "}
+              <a
+                href="https://twitter.com/BeatmBob"
+                target="blank"
+                className="p-2 transition-all brightness-200 hover:contrast-200 hover:scale-150"
+              >
+                <TwitterIcon />
+              </a>{" "}
+              <a
+                target="blank"
+                className="p-2 transition-all brightness-200 hover:contrast-200 hover:scale-150"
+              >
+                <LinkedInIcon />
+              </a>{" "}
+              <a
+                href="https://codepen.io/dumbob"
+                target="blank"
+                className="p-2 transition-all brightness-200 hover:contrast-200 hover:scale-150"
+              >
+                <CodeIcon />
+              </a>
+            </div>
+
+            <p className="font-sans font-bold text-center hover:text-black dark:text-white hover:dark:text-[#64ffda]">
+              <a
+                href="mailto:mrobichaniago@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                mrobichaniago@gmail.com
+              </a>
+            </p>
+          </div>
+
+          {/* resume  */}
+          <Button
+            variant="outlined"
+            className="text-black font-sans dark:text-white"
+          >
+            <a href="#">Resume</a>
+          </Button>
+        </div>
       </div>
+
       {/* width 768px nav */}
       <div className={`${styles.nav} hidden md:block`}>
         <div className="flex md:flex-row justify-between items-center">
@@ -54,7 +159,7 @@ export default function Navbar() {
             </a>
           </div>
 
-          <nav className="space-x-4 hidden md:block ">
+          <nav className="space-x-4">
             <a
               href="#About"
               className="text-gray-600 dark:text-gray-300 text-sm font-bold"

@@ -8,7 +8,7 @@ function LeftStuff() {
   return (
     <div className="hidden md:block">
       <aside className={styles.LNav}>
-        <p
+        <div
           className={`${styles.link} hover:text-black dark:text-white hover:dark:text-[#64ffda]`}
         >
           <a
@@ -38,7 +38,7 @@ function LeftStuff() {
           >
             <CodeIcon />
           </a>
-        </p>
+        </div>
         <p className="pl-4 pt-5 font-extrabold">______________</p>
       </aside>
     </div>

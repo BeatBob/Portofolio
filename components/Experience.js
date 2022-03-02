@@ -29,13 +29,13 @@ function Experience() {
   }, [controls, inView]);
 
   return (
-    <motion.section
+    <section
       aria-label="Experience & Skills"
       className="max-w-2xl min-h-screen mx-auto pt-32"
       id="Skills"
     >
-      <header className="font-bold w-full flex h-10">
-        <h2 className="min-w-[200px]">
+      <header className="font-bold w-4/5 lg:w-full m-auto flex h-10">
+        <h2 className="min-w-[150px]">
           <span className="text-xl text-black dark:text-[#4831d4]">02. </span>
           <span className="font-sans text-3xl dark:text-white">Skills</span>
         </h2>
@@ -47,19 +47,20 @@ function Experience() {
         initial="hidden"
         variants={squareVariants}
       >
-        <div className="mt-6">
-          <p className="font-bold text-lg opacity-80 dark:text-white font-sans">
+        <div className="w-4/5 lg:w-full mx-auto mt-6">
+          <p className="font-bold text-base lg:text-lg opacity-80 dark:text-white font-sans text-center sm:text-left">
             I&apos;ve create some responsive websites that are fast, easy to
             use, own projects and built with best practices. The main area of my
             expertise is front-end development, HTML, CSS, JS, building small
-            and medium web apps. <br /> Visit my LinkedIn profile for more
-            details or just contact me.
+            and medium web apps. <br /> <br /> Visit my LinkedIn profile for
+            more details or just contact me.
           </p>
-          <p className="mt-10 font-semibold text-lg opacity-80 dark:text-white font-sans">
+          <p className="mt-10 font-semibold text-base lg:text-lg opacity-80 dark:text-white font-sans text-center sm:text-left">
             Here are a few technologies I&apos;ve been working with recently:
           </p>
-          <div className="flex justify-between w-8/12 mt-2">
-            <ul>
+
+          <div className="sm:flex sm:justify-between w-8/12 mt-2">
+            <ul className="mb-8 sm:mb-0">
               {technologies.map((tag) => (
                 <li
                   className="dark:text-white font-semibold opacity-80 font-sans"
@@ -70,6 +71,7 @@ function Experience() {
                 </li>
               ))}
             </ul>
+
             <ul>
               {Tools.map((tag) => (
                 <li
@@ -84,7 +86,7 @@ function Experience() {
           </div>
         </div>
       </motion.div>
-    </motion.section>
+    </section>
   );
 }
 

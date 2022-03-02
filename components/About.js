@@ -23,7 +23,7 @@ function About() {
       className="max-w-5xl min-h-screen mx-auto pt-32"
       id="About"
     >
-      <header className="font-bold w-4/5 xl:w-full flex h-10 m-auto">
+      <header className="font-bold w-4/5 xl:w-full flex h-10 m-auto justify-center xl:justify-start">
         <h2 className="min-w-[200px]">
           <span className="text-xl text-black dark:text-[#4831d4]">01. </span>
           <span className="font-sans text-3xl dark:text-white">About Me</span>
@@ -38,19 +38,19 @@ function About() {
       >
         <div className="xl:grid xl:grid-cols-2">
           <div className="w-4/5 xl:w-full m-auto mb-20 xl:mb-0">
-            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
+            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans text-center xl:text-left">
               Hello! My name is M.Robi, a self-taught Front-end Developer and I
               enjoy creating things that live on the internet. My interest in
               web development started back in November 2020 when I decided to
               learn about Digital Marketing — turns out i got an interest in web
               development.
             </p>
-            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
+            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans text-center xl:text-left">
               I learned a lot from the sources available on the internet such as
               FreeCodeCamp, Youtube, Stack Overflow, etc - and it taught me a
               lot about HTML, CSS, javascript and it Frameworks!
             </p>
-            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
+            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans text-center xl:text-left">
               Fast-forward to today, I want to take a bigger step and start a
               new career in Web Development.
             </p>

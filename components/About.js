@@ -23,7 +23,7 @@ function About() {
       className="max-w-5xl min-h-screen mx-auto pt-32"
       id="About"
     >
-      <header className="font-bold w-full flex h-10">
+      <header className="font-bold w-4/5 xl:w-full flex h-10 m-auto">
         <h2 className="min-w-[200px]">
           <span className="text-xl text-black dark:text-[#4831d4]">01. </span>
           <span className="font-sans text-3xl dark:text-white">About Me</span>
@@ -36,26 +36,24 @@ function About() {
         initial="hidden"
         variants={squareVariants}
       >
-        <div className="grid grid-cols-2">
-          <div className="relative">
-            <div className="">
-              <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
-                Hello! My name is M.Robi, a self-taught Front-end Developer and
-                I enjoy creating things that live on the internet. My interest
-                in web development started back in November 2020 when I decided
-                to learn about Digital Marketing — turns out i got an interest
-                in web development.
-              </p>
-              <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
-                I learned a lot from the sources available on the internet such
-                as FreeCodeCamp, Youtube, Stack Overflow, etc - and it taught me
-                a lot about HTML, CSS, javascript and it Frameworks!
-              </p>
-              <p className="text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
-                Fast-forward to today, I want to take a bigger step and start a
-                new career in Web Development.
-              </p>
-            </div>
+        <div className="xl:grid xl:grid-cols-2">
+          <div className="w-4/5 xl:w-full m-auto mb-20 xl:mb-0">
+            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
+              Hello! My name is M.Robi, a self-taught Front-end Developer and I
+              enjoy creating things that live on the internet. My interest in
+              web development started back in November 2020 when I decided to
+              learn about Digital Marketing — turns out i got an interest in web
+              development.
+            </p>
+            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
+              I learned a lot from the sources available on the internet such as
+              FreeCodeCamp, Youtube, Stack Overflow, etc - and it taught me a
+              lot about HTML, CSS, javascript and it Frameworks!
+            </p>
+            <p className="text-base xl:text-lg font-semibold mt-6 opacity-80 dark:text-[#f0f2fa] font-sans">
+              Fast-forward to today, I want to take a bigger step and start a
+              new career in Web Development.
+            </p>
           </div>
 
           <div className="w-full flex justify-center items-center">

@@ -7,10 +7,12 @@ function Work() {
       className="max-w-lg lg:max-w-4xl xl:max-w-5xl min-h-screen mx-auto pt-24"
       id="Work"
     >
-      <header className="font-bold w-full flex h-10 mb-10">
-        <h2 className="min-w-[250px] pr-2 lg:pr-5">
-          <span className="text-xl text-black dark:text-[#4831d4]">03. </span>
-          <span className="font-sans text-xl md:text-2xl lg:text-3xl dark:text-white">
+      <header className="font-bold w-4/5 sm:w-full flex h-10 mb-10 mx-auto">
+        <h2 className="min-w-[250px] sm:pr-5 ">
+          <span className="text-base sm:text-xl text-black dark:text-[#4831d4]">
+            03.{" "}
+          </span>
+          <span className="font-sans text-2xl lg:text-3xl dark:text-white">
             Some Things I&apos;ve Built
           </span>
         </h2>
@@ -18,7 +20,7 @@ function Work() {
       </header>
 
       {/* projects list  */}
-      <ul className="w-full">
+      <ul className="w-4/5 sm:w-full mx-auto">
         {/* Kicks  */}
         <Work_Item
           link="https://kicks-commerce.web.app/"

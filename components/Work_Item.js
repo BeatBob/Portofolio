@@ -2,6 +2,7 @@ import Image from "next/image";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import styles from "../styles/Work.module.css";
 import LinkIcon from "@mui/icons-material/Link";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 function Work_Item({
   link,
@@ -22,7 +23,7 @@ function Work_Item({
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${colStyle1} relative w-full h-[370px]`}
+        className={`${colStyle1} relative w-full h-[420px] sm:h-[370px]`}
       >
         <Image
           src={image}
@@ -33,13 +34,59 @@ function Work_Item({
       </a>
 
       {/* under w-[1024px] description  */}
-      <div className="lg:hidden absolute right-0 top-0 h-[370px] w-full bg-[#0a192f9a] shadow-slate-500 shadow-md ">
-        <p className="text-white">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-          repellat quisquam explicabo illum, nostrum atque beatae rem suscipit
-          accusamus vel illo molestias voluptate? Voluptate dolores illo
-          temporibus nemo earum maiores.
-        </p>
+      <div className="lg:hidden absolute right-0 top-0 h-[420px] sm:h-[370px] h w-full flex justify-center items-center bg-[#112240e1] shadow-slate-500 shadow-md ">
+        <div className="w-5/6 h-5/6 ">
+          <p className="text-[#64ffda] text-sm sm:text-base">
+            Featured Project
+          </p>
+          <h4 className="text-xl sm:text-2xl mb-6 text-white font-sans font-bold">
+            {workName}
+          </h4>
+          {/* description  */}
+
+          <h5 className="text-sm sm:text-base text-white font-medium font-sans mb-3 sm:mb-6">
+            {desc}
+          </h5>
+
+          <div className="flex justify-between sm:block">
+            <ul className="sm:flex sm:flex-wrap sm:gap-4 sm:mb-6">
+              {tech.map((list) => (
+                <li
+                  key={Math.random()}
+                  className="text-sm font-extrabold text-white mb-[4px]"
+                >
+                  <ArrowRightIcon />
+                  {list}
+                </li>
+              ))}
+            </ul>
+
+            <ul className="sm:flex sm:gap-4">
+              {/* ghub  */}
+              <li className="mb-4">
+                <a
+                  href={ghub}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all brightness-200 hover:contrast-200"
+                >
+                  <GitHubIcon />
+                </a>
+              </li>
+              {/* link  */}
+              <li>
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all brightness-200 hover:contrast-200"
+                >
+                  <LinkIcon />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* w-[1024px] description  */}
@@ -56,7 +103,9 @@ function Work_Item({
         <div
           className={`${styles.desc} bg-[#112240] mb-5 flex justify-center items-center p-4`}
         >
-          <p className={`${textDirection} text-white font-medium font-sans`}>
+          <p
+            className={`${textDirection} dark:text-white font-medium font-sans`}
+          >
             {desc}
           </p>
         </div>
@@ -79,7 +128,7 @@ function Work_Item({
               href={ghub}
               target="_blank"
               rel="noopener noreferrer"
-              className="transition-all dark:brightness-200 hover:dark:contrast-200"
+              className="transition-all brightness-200 hover:dark:contrast-200"
             >
               <GitHubIcon />
             </a>

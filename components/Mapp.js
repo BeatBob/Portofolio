@@ -21,14 +21,14 @@ function Mapp() {
         <Marker longitude={101.3662} latitude={0.4702} color="gray" />
       </Map>
 
-      <div className="absolute w-60 h-36 bg-[#0a192fd2] top-3 left-3 p-2">
-        <p className="font-sans font-semibold text-white">
+      <div className="absolute w-52 h-26 sm:w-60 sm:h-36 bg-[#0a192fd2] top-3 left-3 p-2">
+        <p className="font-sans font-semibold text-white text-sm sm:text-base">
           Pekanbaru Riau, Indonesia. JL.Garuda Sakti Km.1, 28293 Bina Widya.
         </p>
         <a
           href="mailto:mrobichaniago@gmail.com"
           target="blank"
-          className="font-sans font-semibold text-white mt-4 block"
+          className="font-sans font-semibold text-white mt-4 block hover:text-[#64ffda] text-sm sm:text-base"
         >
           <span className="text-cyan-400">@: </span>mrobichaniago@gmail.com
         </a>

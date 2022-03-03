@@ -71,7 +71,7 @@ function Work() {
           ghub="https://github.com/BeatBob/Rock-Paper-scissors"
           colStyle1="col-start-1 col-end-13 lg:col-start-1 lg:col-end-9"
           colStyle2="col-start-8 col-end-13"
-          techStyle="flex gap-4 flex-wrap justify-end w-10/12 ml-auto"
+          techStyle="flex gap-4 flex-wrap justify-end w-10/12 ml-auto mb-4"
           textDirection="text-right"
           float="float-right"
         />

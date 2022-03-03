@@ -162,25 +162,25 @@ export default function Navbar() {
           <nav className="space-x-4">
             <a
               href="#About"
-              className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+              className="text-gray-600 dark:text-gray-300 text-sm font-bold hover:text-[#4831d4] dark:hover:text-[#64ffda]"
             >
               <span className="dark:text-[#64ffda]">01.</span> About
             </a>
             <a
               href="#Skills"
-              className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+              className="text-gray-600 dark:text-gray-300 text-sm font-bold hover:text-[#4831d4] dark:hover:text-[#64ffda]"
             >
               <span className="dark:text-[#64ffda]">02.</span> Experience
             </a>
             <a
               href="#Work"
-              className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+              className="text-gray-600 dark:text-gray-300 text-sm font-bold hover:text-[#4831d4] dark:hover:text-[#64ffda]"
             >
               <span className="dark:text-[#64ffda]">03.</span> Work
             </a>
             <a
               href="#Contact"
-              className="text-gray-600 dark:text-gray-300 text-sm font-bold"
+              className="text-gray-600 dark:text-gray-300 text-sm font-bold hover:text-[#4831d4] dark:hover:text-[#64ffda]"
             >
               <span className="dark:text-[#64ffda]">04.</span> Contact
             </a>

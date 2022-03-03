@@ -7,6 +7,7 @@ import RightStuff from "../components/RightStuff";
 import LeftStuff from "../components/LeftStuff";
 import Work from "../components/Work";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -97,6 +98,7 @@ export default function Home() {
         <Experience />
         <Work />
         <Contact />
+        <Footer />
       </main>
 
       <footer></footer>

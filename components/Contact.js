@@ -19,26 +19,27 @@ function Contact() {
   return (
     <section
       aria-label="Experience & Skills"
-      className="max-w-5xl min-h-screen mx-auto pt-20 "
+      className="max-w-5xl min-h-[85vh] mx-auto pt-20 "
       id="Contact"
     >
-      <header className="font-bold w-full flex h-10 mb-8">
-        <h2 className="min-w-[200px]">
+      <header className="font-bold xl:w-full w-2/4 mx-auto flex justify-center h-10 mb-8">
+        <span className="hidden sm:block h-[2px] bg-[#4831d4] w-28 self-center mr-9"></span>
+        <h2 className="min-w-[250px] text-center ">
           <span className="text-xl text-black dark:text-[#4831d4]">04. </span>
           <span className="font-sans text-3xl dark:text-white">
             What&apos;s next?
           </span>
         </h2>
-        <span className="block h-[2px] bg-[#4831d4] w-80 self-center ml-9"></span>
+        <span className="hidden sm:block h-[2px] bg-[#4831d4] w-28 self-center ml-9"></span>
       </header>
 
-      <div className="h-5/6 grid grid-cols-2">
+      <div className="h-5/6 xl:grid xl:grid-cols-2 xl:w-full w-4/5 mx-auto">
         <motion.div
           ref={ref}
           animate={controls}
           initial="hidden"
           variants={squareVariants}
-          className="px-12"
+          className="xl:px-12 text-center xl:text-left mb-8"
         >
           <h4 className="text-3xl dark:text-white opacity-90 font-bold mb-8">
             Get In Touch!

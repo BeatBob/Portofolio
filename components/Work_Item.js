@@ -103,9 +103,7 @@ function Work_Item({
         <div
           className={`${styles.desc} bg-[#112240] mb-5 flex justify-center items-center p-4`}
         >
-          <p
-            className={`${textDirection} dark:text-white font-medium font-sans`}
-          >
+          <p className={`${textDirection} text-white font-medium font-sans`}>
             {desc}
           </p>
         </div>

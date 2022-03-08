@@ -8,7 +8,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CodeIcon from "@mui/icons-material/Code";
-import Resume from "../pages/Resume";
 
 export default function Navbar() {
   const { theme } = useTheme();

@@ -1,13 +1,18 @@
 import styles from "../styles/Hero.module.css";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 function Hero() {
+  console.log("Hey there 👋, Thank you for visiting my Website!");
+  console.log(
+    "If you think this website is interesting and want to see the code behind it, I've placed it in the open at https://github.com/BeatBob/Portofolio. Feel free to check it out!"
+  );
+  console.log(
+    "Also, you can contact me on https://twitter.com/BeatmBob or via mrobichaniago@gmail.com ✨."
+  );
+
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  
 
   useEffect(() => {
     setMounted(true);

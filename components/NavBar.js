@@ -8,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CodeIcon from "@mui/icons-material/Code";
+import Resume from "../pages/Resume";
 
 export default function Navbar() {
   const { theme } = useTheme();
@@ -129,7 +130,13 @@ export default function Navbar() {
             variant="outlined"
             className="text-black font-sans dark:text-white"
           >
-            <a href="#">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1qVeazI_WBheOS7Cn73VMDj4Cs-R5Qgkr/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </Button>
         </div>
       </div>
@@ -189,7 +196,13 @@ export default function Navbar() {
               variant="outlined"
               className="text-black font-sans dark:text-white"
             >
-              <a href="#">Resume</a>
+              <a
+                href="https://drive.google.com/file/d/1qVeazI_WBheOS7Cn73VMDj4Cs-R5Qgkr/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </a>
             </Button>
           </nav>
         </div>

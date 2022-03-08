@@ -7,30 +7,15 @@ import { useInView } from "react-intersection-observer";
 function Hero() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const squareVariants = {
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.7 } },
-    hidden: { opacity: 0, scale: 0 },
-  };
-
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
+  
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   return (
-    <motion.section
+    <section
       aria-label="my hero page"
-      ref={ref}
-      animate={controls}
-      initial="hidden"
-      variants={squareVariants}
       className="relative md:max-w-xl lg:max-w-4xl xl:max-w-6xl min-h-screen m-auto overflow-hidden"
       id="Home"
     >
@@ -104,7 +89,7 @@ function Hero() {
           )}
         </button>
       </div>
-    </motion.section>
+    </section>
   );
 }
 

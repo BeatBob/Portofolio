@@ -51,7 +51,7 @@ function Work() {
           image="/AirBnb_Clone.png"
           workName="Airbnb Clone"
           desc="AirBnb clone website that allowed you to set destination, date
-          range, number of guests."
+          range, number of guests. *currently good to view on min-width 600px or above*"
           tech={["React", "Tailwind CSS", "NextJS", "MapBox"]}
           ghub="https://github.com/BeatBob/Airbnb-clone-next"
           colStyle1="col-start-1 col-end-13 lg:col-start-5 lg:col-end-13"

@@ -26,6 +26,7 @@ function LeftStuff() {
             <TwitterIcon />
           </a>{" "}
           <a
+            href="https://www.linkedin.com/in/m-robi"
             target="blank"
             className="mb-2 p-2 hover:mb-4 transition-all dark:brightness-200 hover:dark:contrast-200"
           >

@@ -99,6 +99,7 @@ export default function Navbar() {
                 <TwitterIcon />
               </a>{" "}
               <a
+                href="https://www.linkedin.com/in/m-robi"
                 target="blank"
                 className="p-2 transition-all brightness-200 hover:contrast-200 hover:scale-150"
               >
@@ -141,7 +142,9 @@ export default function Navbar() {
       </div>
 
       {/* width 768px nav */}
-      <div className={`${styles.nav} hidden md:block`}>
+      <div
+        className={`${styles.nav} bg-white dark:bg-gray-900 hidden md:block`}
+      >
         <div className="flex md:flex-row justify-between items-center">
           {/* Logo / Home / Text */}
 
